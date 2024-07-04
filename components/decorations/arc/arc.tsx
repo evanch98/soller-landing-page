@@ -1,7 +1,7 @@
 interface ArcProps {
-  width: number;
-  height: number;
-  color: string;
+  width?: number;
+  height?: number;
+  color?: string;
 }
 
 export const Arc = ({
