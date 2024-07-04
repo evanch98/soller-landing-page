@@ -20,4 +20,8 @@ export default meta;
 
 type Story = StoryObj<typeof Avatar>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    imgSrc: "/assets/profile-pic/profile.jpg",
+  },
+};
