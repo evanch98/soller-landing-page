@@ -8,7 +8,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-amber-300 text-amber-900 hover:bg-amber-400 gap-x-4",
+        default:
+          "bg-amber-300 text-amber-900 hover:bg-amber-400 gap-x-4 shadow-sm",
         phone: "text-blue-700 hover:bg-blue-700/10 gap-x-4",
         link: "text-neutral-900 hover:underline underline-offset-4",
         ghost: "text-amber-900 hover:text-amber-900/80 gap-x-4",
