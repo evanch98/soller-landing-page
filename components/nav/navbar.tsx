@@ -47,7 +47,7 @@ export const Navbar = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="sticky top-0 flex w-full items-center justify-between px-4 py-2 lg:px-20 lg:py-6"
+      className="sticky top-0 z-50 flex w-full items-center justify-between px-4 py-2 lg:px-20 lg:py-6"
     >
       <div className="flex items-center justify-center gap-x-9">
         <Link href="/">
