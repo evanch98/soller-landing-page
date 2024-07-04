@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { User } from "./user";
 
 const meta: Meta<typeof User> = {
-  title: "Components/Button",
+  title: "Components/User",
   component: User,
   tags: ["autodocs"],
   parameters: {
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof User>;
 
 export const Default: Story = {
   args: {
-    profileSrc: "/assets/profile-pic/profile.jpg",
+    profileSrc: "/assets/profile-pic/profile-1.jpg",
     name: "Rwanda Melfor",
     desc: "zerowaste.com",
   },
