@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Circle } from "./circle";
 
 const meta: Meta<typeof Circle> = {
-  title: "Components/Circle",
+  title: "Components/Decorations/Circle",
   component: Circle,
   tags: ["autodocs"],
   parameters: {
