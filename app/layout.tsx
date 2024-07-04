@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/nav/navbar";
+import { LenisProvider } from "@/providers/lenis-provider";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
-        {children}
+        <LenisProvider>
+          <Navbar />
+          {children}
+        </LenisProvider>
       </body>
     </html>
   );
