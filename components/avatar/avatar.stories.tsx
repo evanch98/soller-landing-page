@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Avatar } from "./avatar";
 
 const meta: Meta<typeof Avatar> = {
-  title: "Components/Button",
+  title: "Components/Avatar",
   component: Avatar,
   tags: ["autodocs"],
   parameters: {
@@ -22,6 +22,6 @@ type Story = StoryObj<typeof Avatar>;
 
 export const Default: Story = {
   args: {
-    imgSrc: "/assets/profile-pic/profile.jpg",
+    imgSrc: "/assets/profile-pic/profile-1.jpg",
   },
 };
