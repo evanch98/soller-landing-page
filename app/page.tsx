@@ -2,6 +2,7 @@ import { FeatureSection } from "@/components/sections/home/features-section/feat
 import { HeroSection } from "@/components/sections/home/hero-section/hero-section";
 import { OverviewSection } from "@/components/sections/home/overview-section/overview-section";
 import { ServicesSection } from "@/components/sections/home/services-section/services-section";
+import { TestimonialSection } from "@/components/sections/home/testimonial-section/testimonial-section";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <OverviewSection />
       <ServicesSection />
       <FeatureSection />
+      <TestimonialSection />
       <div className="h-screen"></div>
     </main>
   );
