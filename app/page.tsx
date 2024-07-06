@@ -1,3 +1,4 @@
+import { CaseStudiesSection } from "@/components/sections/home/case-studies-section/case-studies-section";
 import { FeatureSection } from "@/components/sections/home/features-section/feature-section";
 import { HeroSection } from "@/components/sections/home/hero-section/hero-section";
 import { OverviewSection } from "@/components/sections/home/overview-section/overview-section";
@@ -12,6 +13,7 @@ export default function Home() {
       <ServicesSection />
       <FeatureSection />
       <TestimonialSection />
+      <CaseStudiesSection />
       <div className="h-screen"></div>
     </main>
   );
