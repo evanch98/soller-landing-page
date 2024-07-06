@@ -4,7 +4,7 @@ import { FeatureCard } from "./feature-card";
 import { LiaTruckSolid } from "react-icons/lia";
 
 const meta: Meta<typeof FeatureCard> = {
-  title: "Components/FeatureCard",
+  title: "Components/Cards/FeatureCard",
   component: FeatureCard,
   tags: ["autodocs"],
   parameters: {
