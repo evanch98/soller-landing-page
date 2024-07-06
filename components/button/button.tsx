@@ -13,6 +13,8 @@ const buttonVariants = cva(
         phone: "text-blue-700 hover:bg-blue-700/10 gap-x-4",
         link: "text-neutral-900 hover:underline underline-offset-4",
         ghost: "text-amber-900 hover:text-amber-900/80 gap-x-4",
+        outline:
+          "border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-amber-900 shadow-sm",
       },
       padding: {
         default: "py-3 pl-6 pr-3",
