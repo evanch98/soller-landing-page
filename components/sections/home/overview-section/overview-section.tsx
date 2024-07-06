@@ -22,7 +22,7 @@ export const OverviewSection = () => {
 
   return (
     <ClientProvider>
-      <section className="relative flex flex-col items-center justify-center gap-y-16 px-4 py-12 md:gap-y-20 lg:px-20 lg:py-20">
+      <section className="relative flex flex-col items-center justify-center gap-y-16 overflow-hidden px-4 py-12 md:gap-y-20 lg:px-20 lg:py-20">
         <Header
           title="Pick the Sun"
           subtitle="No more waste"

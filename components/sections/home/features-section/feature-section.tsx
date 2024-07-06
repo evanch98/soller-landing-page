@@ -30,7 +30,7 @@ export const FeatureSection = () => {
     <ClientProvider>
       <section
         ref={container}
-        className="relative flex flex-col items-center justify-center gap-y-16 px-4 py-12 lg:flex-row lg:gap-x-40 lg:px-20 lg:py-20"
+        className="relative flex flex-col items-center justify-center gap-y-16 px-4 py-12 lg:px-20 lg:py-20 xl:flex-row xl:gap-x-40"
       >
         <div className="flex flex-col gap-y-16 lg:gap-y-12">
           <Header
