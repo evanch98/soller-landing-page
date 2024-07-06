@@ -56,7 +56,7 @@ export const TestimonialCarousel = ({
   };
 
   return (
-    <div className="relative w-screen items-center overflow-hidden pl-4 pr-4 lg:pl-20 lg:pr-0">
+    <div className="relative z-50 w-screen items-center overflow-hidden pl-4 pr-4 lg:pl-20 lg:pr-0">
       <motion.div
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
