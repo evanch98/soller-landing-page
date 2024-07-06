@@ -31,7 +31,7 @@ export const OverviewSection = () => {
         />
         <div
           ref={container}
-          className="relative z-50"
+          className="relative z-50 w-full lg:w-fit"
         >
           <Dashboard
             pos={largeScreen ? { x: dashboardX, y: dashboardY } : undefined}
