@@ -3,9 +3,10 @@ import { cn } from "@/lib/utils";
 interface HeaderProps {
   title: string;
   subtitle: string;
-  desc: string;
+  desc?: string;
   center?: boolean;
   className?: string;
+  subtitleClassName?: string;
 }
 
 export const Header = ({
@@ -14,6 +15,7 @@ export const Header = ({
   desc,
   center = true,
   className,
+  subtitleClassName,
 }: HeaderProps) => {
   return (
     <header
@@ -29,7 +31,12 @@ export const Header = ({
           !center && "items-start",
         )}
       >
-        <p className="text-subtitleM text-amber-600 md:text-subtitleXL">
+        <p
+          className={cn(
+            "text-subtitleM text-amber-600 md:text-subtitleXL",
+            subtitleClassName,
+          )}
+        >
           {subtitle}
         </p>
         <h1 className="text-h5 md:text-h2">{title}</h1>
