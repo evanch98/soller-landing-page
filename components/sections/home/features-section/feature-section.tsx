@@ -65,7 +65,7 @@ export const FeatureSection = () => {
         <Mobile
           width={largeScreen ? undefined : "auto"}
           height={largeScreen ? undefined : 470}
-          pos={{ x: mobileX, y: mobileY }}
+          pos={largeScreen ? { x: mobileX, y: mobileY } : undefined}
         />
       </section>
     </ClientProvider>
