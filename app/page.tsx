@@ -16,7 +16,6 @@ export default function Home() {
       <TestimonialSection />
       <CaseStudiesSection />
       <CallToActionSection />
-      <div className="h-screen"></div>
     </main>
   );
 }
