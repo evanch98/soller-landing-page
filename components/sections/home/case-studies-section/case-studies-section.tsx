@@ -11,7 +11,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 export const CaseStudiesSection = () => {
   const largeScreen = useMediaQuery("(min-width: 1440px)");
-  const mediumScreen = useMediaQuery("(min-width: 768px)")
+  const mediumScreen = useMediaQuery("(min-width: 768px)");
 
   return (
     <ClientProvider>
