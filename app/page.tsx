@@ -1,3 +1,4 @@
+import { CallToActionSection } from "@/components/sections/home/call-to-action-section/call-to-action-section";
 import { CaseStudiesSection } from "@/components/sections/home/case-studies-section/case-studies-section";
 import { FeatureSection } from "@/components/sections/home/features-section/feature-section";
 import { HeroSection } from "@/components/sections/home/hero-section/hero-section";
@@ -14,6 +15,7 @@ export default function Home() {
       <FeatureSection />
       <TestimonialSection />
       <CaseStudiesSection />
+      <CallToActionSection />
       <div className="h-screen"></div>
     </main>
   );
