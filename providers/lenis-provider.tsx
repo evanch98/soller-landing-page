@@ -1,6 +1,6 @@
 "use client";
 
-import ReactLenis from "lenis/react";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 interface LenisProviderProps {
   children: React.ReactNode;
