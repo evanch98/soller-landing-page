@@ -34,7 +34,6 @@ export const Navbar = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    console.log(`Latest: ${latest}, Previous: ${previous}`);
     if (latest > previous! && latest > 150) {
       setHidden(true);
     } else {
