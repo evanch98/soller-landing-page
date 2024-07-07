@@ -30,7 +30,7 @@ export const HeroSection = () => {
     <ClientProvider>
       <section
         ref={container}
-        className="flex h-full w-full flex-col-reverse items-center gap-x-20 px-4 py-12 text-neutral-900 lg:px-20 xl:flex-row"
+        className="mt-14 flex h-full w-full flex-col-reverse items-center gap-x-20 px-4 py-12 text-neutral-900 lg:mt-24 lg:px-20 xl:flex-row"
       >
         <div className="flex w-full max-w-[600px] flex-col gap-y-16 lg:gap-y-32">
           <div className="flex flex-col items-center gap-y-6 text-center lg:items-start lg:text-left">
