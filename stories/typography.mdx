@@ -1,0 +1,145 @@
+import { Meta, Typeset } from "@storybook/blocks";
+
+<Meta title="Stories/Typography" />
+
+export const typography = {
+  type: {
+    primary: "Roboto"
+  },
+  weight: {
+    thin: "300",
+    regular: "400",
+    medium: "500",
+    bold: "700",
+    extrabold: "800",
+  },
+  size: {
+    h1: 72,
+    h2: 56,
+    h3: 48,
+    h4: 40,
+    h5: 32,
+    h6: 24,
+    subtitleXL: 20,
+    subtitleL: 18,
+    subtitleM: 16,
+    subtitleS: 14,
+    bodyXXXL: 32,
+    bodyXXL: 24,
+    bodyXL: 20,
+    bodyL: 18,
+    bodyM: 16,
+    bodyS: 14,
+    bodyXS: 12,
+    bodyXXS: 10,
+    captionM: 20,
+    captionS: 16,
+    buttonXL: 24,
+    buttonL: 20,
+    buttonM: 16,
+    buttonS: 14
+  }
+}
+
+# Typography
+
+The `fontSize`, `fontWeight`, `lineHeight`, and `letterSpacing` for each typeset are already defined in the `tailwind.config.ts` file. For example, `text-h1` means `h1: ["72px", { fontWeight: 800, lineHeight: "110%" }]`. We don't need to use `text-bold` for the `fontWeight`.
+
+**Font:** Roboto
+
+**Weights:** 300(thin), 400(regular), 500(medium), 700(bold), 800(extrabold)
+
+## Heading (Extrabold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h1),
+    Number(typography.size.h2),
+    Number(typography.size.h3),
+  ]}
+  fontWeight={typography.weight.extrabold}
+  lineHeight="110%"
+  sampleText="Heading"
+  fontFamily={typography.type.primary}
+/>
+
+## Heading (Bold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h4),
+    Number(typography.size.h5),
+    Number(typography.size.h6),
+  ]}
+  fontWeight={typography.weight.bold}
+  lineHeight="110%"
+  sampleText="Heading"
+  fontFamily={typography.type.primary}
+/>
+
+## Subtitle
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.subtitleXL),
+    Number(typography.size.subtitleL),
+    Number(typography.size.subtitleM),
+    Number(typography.size.subtitleS),
+  ]}
+  fontWeight={typography.weight.medium}
+  lineHeight="110%"
+  sampleText="Subtitle"
+  fontFamily={typography.type.primary}
+/>
+
+## Body
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.bodyXXXL),
+  ]}
+  fontWeight={typography.weight.light}
+  sampleText="Body"
+  fontFamily={typography.type.primary}
+/>
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.bodyXXL),
+    Number(typography.size.bodyXL),
+    Number(typography.size.bodyL),
+    Number(typography.size.bodyM),
+    Number(typography.size.bodyS),
+    Number(typography.size.bodyXS),
+    Number(typography.size.bodyXXS),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText="Body"
+  fontFamily={typography.type.primary}
+/>
+
+## Caption
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.captionM),
+    Number(typography.size.captionS),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText="Caption"
+  fontFamily={typography.type.primary}
+/>
+
+## Button
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.buttonXL),
+    Number(typography.size.buttonL),
+    Number(typography.size.buttonM),
+    Number(typography.size.buttonS),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText="Button"
+  fontFamily={typography.type.primary}
+/>
