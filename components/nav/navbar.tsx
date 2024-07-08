@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { Button } from "@/components/button/button";
-import { RiArrowRightLine, RiHeadphoneLine, RiMenuFill } from "react-icons/ri";
+import { RiArrowRightLine, RiHeadphoneLine } from "react-icons/ri";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Menu } from "../decorations/menu/menu";
 
 const routes = [
   {
@@ -29,6 +30,7 @@ const routes = [
 export const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const { scrollY } = useScroll();
 
@@ -46,6 +48,10 @@ export const Navbar = () => {
       setScrolled(false);
     }
   });
+
+  const handleMenuOpen = () => {
+    setMenuOpen((pv) => !pv);
+  };
 
   return (
     <motion.nav
@@ -94,11 +100,41 @@ export const Navbar = () => {
           <RiArrowRightLine className="h-6 w-6" />
         </Button>
       </div>
-      <div className="flex lg:hidden">
-        <Button padding="icon">
-          <RiMenuFill className="h-6 w-6" />
+      <div className="relative z-[9999] flex lg:hidden">
+        <Button
+          onClick={handleMenuOpen}
+          padding="icon"
+        >
+          <Menu />
         </Button>
       </div>
+      {menuOpen && (
+        <motion.div
+          initial={{ translateX: 1000 }}
+          animate={{
+            translateX: 0,
+            transition: { type: "tween", duration: 0.8 },
+          }}
+          className="absolute right-0 top-0 h-screen w-screen bg-white lg:hidden"
+        >
+          <div className="mt-14 flex h-full w-full flex-col items-center justify-center gap-y-4 lg:hidden">
+            {routes.map((route, index) => (
+              <Link
+                key={index}
+                href={route.href}
+                className="px-2 py-3"
+              >
+                <Button
+                  variant="link"
+                  padding="link"
+                >
+                  {route.title}
+                </Button>
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      )}
     </motion.nav>
   );
 };
