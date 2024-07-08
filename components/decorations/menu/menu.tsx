@@ -1,10 +1,11 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
 export const Menu = () => {
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
 
   const onClick = () => {
     setIsClicked((pv) => !pv);
@@ -13,7 +14,10 @@ export const Menu = () => {
   return (
     <motion.div
       onClick={onClick}
-      className="flex cursor-pointer flex-col gap-y-[5px]"
+      className={cn(
+        "flex h-6 w-6 cursor-pointer flex-col items-center justify-center gap-y-[5px]",
+        isClicked && "translate-x-[10%]",
+      )}
     >
       <motion.div
         className="w-6 rounded-full border-[1.5px] border-amber-900"
