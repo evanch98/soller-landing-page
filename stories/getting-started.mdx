@@ -1,0 +1,114 @@
+# Getting Started
+
+### Disclaimer
+
+> This project is created for educational and practice purposes only. The company name "Soller" is entirely fictional and any resemblance to actual companies, organizations, products, or entities, living or dead, is purely coincidental. The usage of the name "Soller" in this project does not imply any real-world association or endorsement. This project should not be construed as representing any real company or organization.
+
+## Starting the Project
+
+Run the following command to start the development server.
+
+```bash
+npm run dev
+```
+
+## Developing the Project
+
+The main techstack of this project are as follow:
+
+- `Next.js`
+- `React`
+- `TypeScript`
+- `Tailwind CSS`
+- `Framer Motion`
+- `Lenis`
+- `Storybook`
+
+Before developing, read the Project Structure section to familiarize yourself with the codebase.
+
+Every component should be inside the `components` folder. If it is application, every component should have a corresponding `story` to test and document the component. The documentation should be on Storybook for easier access and consistency.
+
+The format and linting rules are defined in the `.eslintrc.json` and `.prettierrc` files.
+
+To make sure the format is consistent, run the following command.
+
+```bash
+npm run format
+```
+
+## Project Structure
+
+The project structure is similar to the recommended project structure by the [Next.js official documentation](https://nextjs.org/docs/getting-started/project-structure).
+
+### Top-level folders
+
+Top-level folders are used to organize the application's code and static assets.
+
+- `.husky`
+- `.storybook`
+- `app`
+- `components`
+- `hooks`
+- `lib`
+- `providers`
+- `public`
+- `stories`
+
+### Top-level files
+
+Top-level files are used to configure the application and manage dependencies.
+
+- `.eslintrc.json`
+- `.gitignore`
+- `.lintstagedrc.js`
+- `.npmrc`
+- `.nvmrc`
+- `.prettierignore`
+- `.prettierrc`
+- `next.config.mjs`
+- `package-lock.json`
+- `package.json`
+- `postcss.config.cjs`
+- `README.md`
+- `tailwind.config.ts`
+- `tsconfig.json`
+
+### `app` folder
+
+This folder contains `globals.css`, `layout.tsx`, `loading.tsx`, and `page.tsx` files.
+
+- `globals.css` file is for the global style.
+- `layout.tsx` file is for the global layout.
+- `loading.tsx` file is for the global loading.
+- `page.tsx` file is for the home page.
+
+### `components` folder
+
+This folder contains components for the project.
+
+The name of the component should be self-explanatory. For example, instead of using generic name like `Card`, the name of the component should be `FeatureCard` or `TestimonialCard`.
+
+The filename of the component should be lowercase. For example, the filename for the `FeatureCard` component is `feature-card.tsx`.
+
+The section of a page should be inside the `components/sections` folder. This project only contains one page (`Home`); therefore, each section of the homepage is inside the `sections/home/name-of-the-section` folder.
+
+### `hooks` folder
+
+This folder contains custom `React` hooks.
+
+### `lib` folder
+
+This folder contains utility functions.
+
+### `providers` folder
+
+This folder contains providers for the website.
+
+The two main providers are:
+
+- `ClientProvider` to make sure the components (that should be rendered on the client side) are only rendered on the client side.
+- `LenisProvider` for smooth scrolling.
+
+### `stories` folder
+
+This folder contains general documentations for the application. The documentation for a particular component should be inside the folder containing the corresponding component.
